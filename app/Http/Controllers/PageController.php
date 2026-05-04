@@ -11,6 +11,8 @@ class PageController extends Controller
     {
 
         $trains = Train::all();
-        return view('index');
+
+
+        return view('index', compact("trains"));
     }
 }
